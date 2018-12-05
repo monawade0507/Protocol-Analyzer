@@ -8,8 +8,16 @@ Protocols you must recognize are:
   Transport Layer: TCP, UDP, ICMP, Other-Transport-Layer
   
 This is the structure definition for pcap_pkthdr:
+
   struct pcap_pkthdr {
+  
 		struct timeval ts; /* time stamp */
+		
 		bpf_u_int32 caplen; /* length of portion present */
+		
 		bpf_u_int32 len; /* length this packet (off wire) */
+		
 	};
+	
+	
+Helpful Link: https://www.tcpdump.org/pcap.html
