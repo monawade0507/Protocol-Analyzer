@@ -6,3 +6,10 @@ Protocols you must recognize are:
   Link layer: Ethernet, IEE 802.3
   Network layer: IPv4, IPv6, Other-Network-Layer
   Transport Layer: TCP, UDP, ICMP, Other-Transport-Layer
+  
+This is the structure definition for pcap_pkthdr:
+  struct pcap_pkthdr {
+		struct timeval ts; /* time stamp */
+		bpf_u_int32 caplen; /* length of portion present */
+		bpf_u_int32 len; /* length this packet (off wire) */
+	};
