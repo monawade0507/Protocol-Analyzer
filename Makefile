@@ -44,5 +44,5 @@ clean:
 submit:
 	rm -f core ${TARGET} ${OBJ_FILES}
 	mkdir `whoami`
-	cp Makefile README.txt *.h *.cc `whoami`
+	cp Makefile README.txt *.h *.cpp *.pcap `whoami`
 	tar zcf `whoami`.tgz `whoami`
